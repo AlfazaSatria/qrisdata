@@ -2,6 +2,26 @@
 @section('title', 'Report Data')
 @section('content')
 
+<div class="container">
+    <h2>Top 5 Events in 2023</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nama Event</th>
+                <th>Total Transaksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($topEvents as $event)
+            <tr>
+                <td>{{ $event->nama_event }}</td>
+                <td>{{ $event->total }}</td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
+</div>
+
 <div class="card">
     <div class="card-header">
         <h4>Daftar Transakasi</h4>
