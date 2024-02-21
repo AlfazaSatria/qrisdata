@@ -27,5 +27,9 @@ Auth::routes();
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/index/report', [App\Http\Controllers\TransactionController::class, 'dataTransaction'])->name('report.index');
+Route::get('/transaction-qris', [App\Http\Controllers\TransactionController::class, 'dataTransactionMonthly'])->name('transactionqris.monthly');
+
+
 
 

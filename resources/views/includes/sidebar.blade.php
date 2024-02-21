@@ -15,6 +15,15 @@
 				</a>
 			</li>
 
+			<li class="'Main Dashboard' ">
+				<a class="nav-link" href="{{ route('report.index') }}">
+					<i class="fas fa-file"></i><span>Transaction QRIS</span>
+				</a>
+				<a class="nav-link" href="{{ route('transactionqris.monthly') }}">
+					<i class="fas fa-file"></i><span>Transaction QRIS Monthly</span>
+				</a>
+			</li>
+
 			
 
 		
